@@ -37,24 +37,21 @@ public class InputSystem : MonoBehaviour
 
         controller.Move(right + left, jump);
 
-        //Look(right);
-        //Move(left);
+        if (keyboard.spaceKey.wasPressedThisFrame)
+        {
+            m_Firing = true;
+            m_FireCooldown = 0;
+        }
+        else if (keyboard.spaceKey.wasReleasedThisFrame)
+        {
+            m_Firing = false;
+        }
 
-        //if (keyboard.buttonSouth.wasPressedThisFrame)
-        //{
-        //    m_Firing = true;
-        //    m_FireCooldown = 0;
-        //}
-        //else if (keyboard.buttonSouth.wasReleasedThisFrame)
-        //{
-        //    m_Firing = false;
-        //}
-
-        //if (m_Firing && m_FireCooldown < Time.time)
-        //{
-        //    Fire();
-        //    m_FireCooldown = Time.time + 0.1f;
-        //}
+        if (m_Firing && m_FireCooldown < Time.time)
+        {
+            controller.Shoot();
+            m_FireCooldown = Time.time + 0.4f;
+        }
     }
 
     //private void Move(Vector2 direction)
