@@ -383,6 +383,7 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+  bulletPrefab: {fileID: 7100717186390934239, guid: 959a8db943632fa4e854f096a3f9d8c7, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
