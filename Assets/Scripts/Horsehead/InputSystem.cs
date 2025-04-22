@@ -5,12 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController2D))]
 public class InputSystem : MonoBehaviour
 {
-    public float moveSpeed;
-    public float rotateSpeed;
 
     CharacterController2D controller;
 
-    private Vector2 m_Rotation;
     private bool m_Firing;
     private float m_FireCooldown;
 
