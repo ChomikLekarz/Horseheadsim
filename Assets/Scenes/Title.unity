@@ -133,8 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 75844269}
   - component: {fileID: 75844268}
+  - component: {fileID: 75844271}
   - component: {fileID: 75844267}
-  - component: {fileID: 75844270}
   m_Layer: 0
   m_Name: Stage5Button
   m_TagString: Untagged
@@ -151,9 +151,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 75844266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d8be591ea5095943aefcd95e6123646, type: 3}
+  m_Script: {fileID: 11500000, guid: 6524940ff6db27a4aa7df5c96a775100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonNumber: 5
 --- !u!212 &75844268
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -219,18 +220,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &75844270
-MonoBehaviour:
+--- !u!61 &75844271
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75844266}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 109b3331107819d4b8f03a534b51864b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.04, y: 1.44}
+    newSize: {x: 3.04, y: 1.44}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.04, y: 1.44}
+  m_EdgeRadius: 0
 --- !u!1 &559292089
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,8 +256,8 @@ GameObject:
   m_Component:
   - component: {fileID: 559292092}
   - component: {fileID: 559292091}
+  - component: {fileID: 559292094}
   - component: {fileID: 559292090}
-  - component: {fileID: 559292093}
   m_Layer: 0
   m_Name: Stage2Button
   m_TagString: Untagged
@@ -259,9 +274,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 559292089}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d8be591ea5095943aefcd95e6123646, type: 3}
+  m_Script: {fileID: 11500000, guid: 6524940ff6db27a4aa7df5c96a775100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonNumber: 2
 --- !u!212 &559292091
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -327,18 +343,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &559292093
-MonoBehaviour:
+--- !u!61 &559292094
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559292089}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 109b3331107819d4b8f03a534b51864b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.04, y: 1.44}
+    newSize: {x: 3.04, y: 1.44}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.04, y: 1.44}
+  m_EdgeRadius: 0
 --- !u!1 &1204088647
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,8 +379,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1204088650}
   - component: {fileID: 1204088649}
+  - component: {fileID: 1204088652}
   - component: {fileID: 1204088648}
-  - component: {fileID: 1204088651}
   m_Layer: 0
   m_Name: Stage4Button
   m_TagString: Untagged
@@ -367,9 +397,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1204088647}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d8be591ea5095943aefcd95e6123646, type: 3}
+  m_Script: {fileID: 11500000, guid: 6524940ff6db27a4aa7df5c96a775100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonNumber: 4
 --- !u!212 &1204088649
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -435,18 +466,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1204088651
-MonoBehaviour:
+--- !u!61 &1204088652
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204088647}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 109b3331107819d4b8f03a534b51864b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.04, y: 1.44}
+    newSize: {x: 3.04, y: 1.44}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.04, y: 1.44}
+  m_EdgeRadius: 0
 --- !u!1 &1300282104
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,8 +502,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1300282107}
   - component: {fileID: 1300282106}
+  - component: {fileID: 1300282109}
   - component: {fileID: 1300282105}
-  - component: {fileID: 1300282108}
   m_Layer: 0
   m_Name: Stage3Button
   m_TagString: Untagged
@@ -475,9 +520,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1300282104}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d8be591ea5095943aefcd95e6123646, type: 3}
+  m_Script: {fileID: 11500000, guid: 6524940ff6db27a4aa7df5c96a775100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonNumber: 3
 --- !u!212 &1300282106
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -543,18 +589,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1300282108
-MonoBehaviour:
+--- !u!61 &1300282109
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300282104}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 109b3331107819d4b8f03a534b51864b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.04, y: 1.44}
+    newSize: {x: 3.04, y: 1.44}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.04, y: 1.44}
+  m_EdgeRadius: 0
 --- !u!1 &1542848240
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,7 +754,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 5a41ae063ed577c4bb5f5b9c8f37e576, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -730,8 +790,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2043050572}
   - component: {fileID: 2043050571}
+  - component: {fileID: 2043050574}
   - component: {fileID: 2043050570}
-  - component: {fileID: 2043050573}
   m_Layer: 0
   m_Name: Stage1Button
   m_TagString: Untagged
@@ -748,9 +808,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2043050569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d8be591ea5095943aefcd95e6123646, type: 3}
+  m_Script: {fileID: 11500000, guid: 6524940ff6db27a4aa7df5c96a775100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonNumber: 1
 --- !u!212 &2043050571
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -816,15 +877,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2043050573
-MonoBehaviour:
+--- !u!61 &2043050574
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043050569}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 109b3331107819d4b8f03a534b51864b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.04, y: 1.44}
+    newSize: {x: 3.04, y: 1.44}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.04, y: 1.44}
+  m_EdgeRadius: 0
