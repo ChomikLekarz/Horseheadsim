@@ -7,7 +7,6 @@ using UnityEngine.InputSystem;
 public class SceneManagement : MonoBehaviour
 {
     public int ButtonNumber;
-    float press = Pointer.current.press.ReadValue();
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +19,7 @@ public class SceneManagement : MonoBehaviour
         
     }
 
-    private void OnMouseDown()
+    void OnMouseDown()
     {
         switch (ButtonNumber)
         {
