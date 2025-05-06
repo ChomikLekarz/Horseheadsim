@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -66,9 +67,27 @@ public class CharacterController2D : MonoBehaviour
             m_Rigidbody2D.AddForce(transform.up * m_JumpForce);
             animator.SetBool("Grounded", false);
         }
+
+
     }
 
+        void OnCollisionEnter2D(Collision2D other)
+        {
+        Debug.Log("Touched!");
 
+        if (other.gameObject.CompareTag("Exit"))
+        {
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(sceneBuildIndex: scene.buildIndex + 1);
+            Debug.Log("Active Scene is '" + scene.name + "'.");
+        } else if (other.gameObject.CompareTag("Enemy"))
+        {
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(sceneBuildIndex: scene.buildIndex);
+        }
+
+
+        }
     //private void Flip()
     //{
     //    // Switch the way the player is labelled as facing.
